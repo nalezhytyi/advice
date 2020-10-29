@@ -1,0 +1,72 @@
+#root, html, body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    overflow-y: hidden;
+}
+
+.app {
+    height: 100%;
+    background: rgb(164,164,255);
+    background: radial-gradient(circle, rgba(164,164,255,1) 18%, rgba(172,241,255,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card {
+    margin: 15px;
+    position: relative;
+    background: rgba(73, 165, 191, 0.2);
+    box-shadow: 0 0 14px -4px rgba(0, 0, 0, 0.35);
+    border-radius: 5px;
+    color: #fff;
+    transition: 1s ease;
+}
+
+.heading {
+    margin: 20px;
+    font-weight: 400;
+}
+
+.button {
+    position: absolute;
+    bottom: -120px;
+    left: 0;
+    right: 0;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    width: 150px;
+    height: 70px;
+    margin: 25px auto;
+    border-radius: 25px;
+    border: none;
+    background: rgba(73, 165, 191, 0.2);
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+    box-shadow: 0 0 14px -4px rgba(0, 0, 0, 0.35);
+    color: #fff;
+    outline: none;
+}
+
+.button:hover {
+    box-shadow: 0 0 25px -4px rgba(0, 0, 0, 0.35);
+
+}
+
+.button:active {
+    opacity: 0.5;
+}
+
+.button:disabled {
+    opacity: 0.5;
+    box-shadow: none;
+    cursor: wait;
+}
+
